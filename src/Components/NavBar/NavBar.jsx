@@ -1,5 +1,7 @@
 import Link from "next/link";
 import React from "react";
+import styles from "./page.module.css";
+import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 
 const links = [
   {
@@ -36,14 +38,19 @@ const links = [
 
 const NavBar = () => {
   return (
-    <div>
-      <div>NextJs Tutorial</div>
-      <div>
+    <div className={styles.container}>
+      <Link href="/">
+        <div className={styles.logo}>NextJs Tutorial</div>
+      </Link>
+
+      <div className={styles.links}>
+        <DarkModeToggle />
         {links.map((link) => (
           <Link key={link.id} href={link.url}>
             {link.title}
           </Link>
         ))}
+        <button className={styles.logout}>Logout</button>
       </div>
     </div>
   );

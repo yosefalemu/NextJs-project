@@ -1,10 +1,41 @@
 import React from "react";
+import styles from "./page.module.css";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <div>
-      <div>Left Footer</div>
-      <div>Right Footer</div>
+    <div className={styles.container}>
+      <div>©2023 yosef alemu. All rights reserved.</div>
+      <div className={styles.socials}>
+        <Image
+          src="/1.png"
+          width={15}
+          height={15}
+          className={styles.icon}
+          alt=""
+        />
+        <Image
+          src="/2.png"
+          width={15}
+          height={15}
+          className={styles.icon}
+          alt=""
+        />
+        <Image
+          src="/3.png"
+          width={15}
+          height={15}
+          className={styles.icon}
+          alt=""
+        />
+        <Image
+          src="/4.png"
+          width={15}
+          height={15}
+          className={styles.icon}
+          alt=""
+        />
+      </div>
     </div>
   );
 };
