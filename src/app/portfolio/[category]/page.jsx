@@ -14,6 +14,14 @@ const getItem = (item) => {
   }
 };
 
+export function generateMetadata({ params }) {
+  const post = params.category;
+  return {
+    title: post,
+    description: post,
+  };
+}
+
 const Category = ({ params }) => {
   const dataItems = getItem(params.category);
   return (

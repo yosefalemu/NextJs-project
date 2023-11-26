@@ -3,6 +3,11 @@ import styles from "./page.module.css";
 import Button from "@/Components/Button/Button";
 import Hero from "public/hero.png";
 
+export const metadata = {
+  title: "Jossy Post",
+  description: "This is nextjs website for blog post",
+};
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -17,7 +22,7 @@ export default function Home() {
         <Button url="/portfolio" text="See Our Works" />
       </div>
       <div className={styles.item}>
-        <Image src={Hero} alt="" className={styles.image} />
+        <Image src={Hero} alt="Homepage" className={styles.image} />
       </div>
     </div>
   );

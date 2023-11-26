@@ -1,0 +1,38 @@
+.container {
+  padding: 40px;
+}
+.top {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+.topLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.title {
+}
+.desc {
+}
+.postedUser {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.username {
+  text-transform: capitalize;
+}
+.topRight {
+  flex: 1;
+}
+.imageContainer {
+  width: 100%;
+  height: 450px;
+  position: relative;
+}
+.img {
+  object-fit: cover;
+}
