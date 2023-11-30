@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 
 const getPost = async (id) => {
-  const res = await fetch(`http://localhost:3000/api/v1/post/${id}`, {
+  const res = await fetch(`http://localhost:3000/api/post/${id}`, {
     cache: "no-store",
   });
   if (!res.ok) {
@@ -13,7 +13,7 @@ const getPost = async (id) => {
   return res.json();
 };
 const getPostedUser = async (username) => {
-  const res = await fetch(`http://localhost:3000/api/v1/auth/${username}`, {
+  const res = await fetch(`http://localhost:3000/api/auth/${username}`, {
     cache: "no-store",
   });
   if (!res.ok) {

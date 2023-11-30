@@ -31,11 +31,6 @@ const links = [
     title: "Contact",
     url: "/contact",
   },
-  {
-    id: 6,
-    title: "Dashboard",
-    url: "/dashboard",
-  },
 ];
 
 const NavBar = () => {
